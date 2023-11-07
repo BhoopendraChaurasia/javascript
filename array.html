@@ -1,0 +1,38 @@
+<script>
+let arr = [3,6,9,7,4,8];
+console.log('Original Array');
+console.log(arr);
+let element_at = arr.at(2);
+console.log(element_at); // return element of 2nd index position
+let deleted = arr.pop();
+console.log(`deleted element: ${deleted}`); // return 8 delete element from end position 
+let push = arr.push(10); // variable push will return no of count of all element  
+console.log(`added element: ${arr[push-1]}`); // return added element   
+console.log(arr.fill(1)); // fill() method convert all element with given value
+console.log(arr.join('-'));
+let deleted_start = arr.shift();
+console.log(`delete element from start: ${deleted_start}`);
+let arr_1 = [4,6,2,5,8];
+console.log(arr_1.reverse());
+let position = arr_1.unshift(1);
+console.log(`added element: ${arr_1[position-1]}`);
+let includes = arr_1.includes(6); // includes() method return true or false if exist given element
+console.log(includes);
+let every = arr_1.every(item => item > 2);
+console.log(every);
+console.log(`Original array: ${arr_1}`);
+let check = 6;
+arr_1.map(item => console.log(item == check));
+let added_3 = arr_1.map(item => 
+    {
+    if(item > 3)  console.log('greater than 3 is: '+item)
+    }
+);
+
+// console.log(added_3);
+
+let arr_2 = [3,6,7,2,9,2,7,5,4];
+
+
+
+</script>
